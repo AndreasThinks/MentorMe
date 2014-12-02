@@ -1,0 +1,4 @@
+*.db
+*.pyc
+/flask
+/app/report.csv
