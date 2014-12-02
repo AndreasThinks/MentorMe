@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
 
-</body>
-</html>
+<div id="Find_Mentor"><a href={{url_for('list_users')}}><h1>Find a Mentor</h1></a></div>
+<div id="Become_mentor"><a href={{url_for('add_user')}}><h1>Become a Mentor</h1></a></div>
+
+{% endblock %}

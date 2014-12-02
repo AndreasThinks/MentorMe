@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+Please enter your details below to be added to our database
+
+<form method="POST" name="LoginForm">
+    <p>First Name {{form.first_name(size=80)}}</p>
+    <p>Last Name {{form.last_name(size=80)}}</p>
+    <p>Email {{form.email(size=80)}}</p>
+    <p>Phone Number {{form.phone_no(size=80)}}</p>
+    <p>Password {{form.password(size=12)}}</p>
+    <p>Title {{form.title(size=80)}}</p>
+    <p>Rank {{form.rank(size=80)}}</p>
+    <p>OCU/Division {{form.ocu(size=80)}}</p>
+    <p>Areas of Specialisation {{form.specialisations(size=80)}}</p>
+    <p>Summary {{form.cv(size=80)}}</p>
+    <div id="how_to_help">
+        How would you be willing to offer support?
+    <p>Mentor? {{form.mentor()}}</p>
+    <p>Quick Coffee? {{form.coffee()}}</p>
+    <p>Phone Chat? {{form.phone_chat()}}</p>
+    <p>Email Advice? {{form.email_chat()}}</p>
+    </div>
+
+
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
